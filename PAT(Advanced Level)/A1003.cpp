@@ -33,6 +33,77 @@ Sample Input
 1 2 1
 2 4 1
 3 4 1
+
 Sample Output
 2 4
 */
+
+
+//图, Dijkstra算法, 动态规划
+//判断条件 首先是否最短，其次该条路径上能交叫的帮手最多
+//ci[i] 为当前城市的帮手数
+//pc[i] 为从源点到当前点i的路径数
+//rt[i] 为从源点到当前点i的最大帮手数
+//dp[i] 为从源点到当前点的最短距离
+
+//状态转移方程( j 为访问过的点，i 为未访问的点)：
+// 1.由 j 到 i 的路径的距离比原先小：
+//  dp[i] = dp[j] + dp[j][i];
+//  rt[i] = rt[j] + ci[j];
+//  pc[i] = pc[j]
+// 2.由 j 到 i 的路径的距离与原先相等：
+//  dp[i] 不变;
+//  rt[i] = max(rt[i],rt[j] + ci[i]);
+//  pc[i] += pc[j]
+#include <iostream>
+#include <algorithm>
+using namespace std;
+const int MAXN = 520,INF = 12345678;
+int n,ci[MAXN],v[MAXN][MAXN],vis[MAXN],dp[MAXN],pc[MAXN],rt[MAXN];
+
+void find(int start,int end){
+    fill(dp,dp+MAXN,INF);
+    dp[start] = 0;
+    pc[start] = 1;
+    rt[start] = ci[start];
+    for(int cnt = 0; cnt < n; cnt++){
+        int minp = INF,j = -1;
+        for(int i = 0; i < n; i++){
+            if(vis[i] == 0 && dp[i] < minp){
+                j = i;
+                minp = dp[i];
+            }
+        }
+        if(j != -1) vis[j] = 1;
+        if(j == end) break;
+        for(int i = 0; i < n; i++){
+            if(vis[i] == 0){
+                if(dp[j]+v[j][i] < dp[i]){
+                    dp[i] = dp[j]+v[j][i];
+                    pc[i] = pc[j];
+                    rt[i] = rt[j]+ci[i];
+                }else if(dp[j]+v[j][i] == dp[i]){
+                    pc[i] +=pc[j];
+                    rt[i] = max(rt[i],rt[j]+ci[i]);
+                }
+            }
+        }
+    }
+    printf("%d %d\n",pc[end],rt[end]);
+}
+
+int main(){
+    int m,c1,c2,a,b,c;
+    //freopen("in/in.txt","r",stdin);
+    fill(v[0],v[0]+MAXN*MAXN,INF);
+    cin >> n >> m >> c1 >> c2;
+    for(int i = 0; i < n; i++){
+        cin >> ci[i];
+    }
+    for(int i = 0; i < m; i++){
+        cin >> a >> b >> c;
+        v[a][b] = v[b][a] = c;
+    }
+    find(c1,c2);
+    return 0;
+}
