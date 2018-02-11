@@ -5,7 +5,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceRoot}/debug/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -28,7 +28,7 @@
             "name": "C++ Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${workspaceRoot}/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceRoot}/debug/${fileBasenameNoExtension}.exe",
             "processId": "${command:pickProcess}",
             // "linux": {
             //     "MIMode": "gdb",

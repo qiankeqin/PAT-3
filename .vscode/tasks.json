@@ -6,7 +6,7 @@
         {
             "taskName": "gdb",
             "command": "g++",
-            "args": ["-g", "${file}", "-o", "${fileBasenameNoExtension}.exe"],
+            "args": ["-g", "${file}", "-o", "debug/${fileBasenameNoExtension}.exe"],
             "showOutput": "always",
             "problemMatcher": {
                 "owner": "cpp",
@@ -24,7 +24,7 @@
         {
             "taskName": "build",
             "command": "g++",
-            "args": ["-g","-Wall","${file}","-o", "${fileBasenameNoExtension}.exe"],
+            "args": ["-g","-Wall","${file}","-o", "debug/${fileBasenameNoExtension}.exe"],
             "showOutput": "always",
             "problemMatcher": {
                 "owner": "cpp",
