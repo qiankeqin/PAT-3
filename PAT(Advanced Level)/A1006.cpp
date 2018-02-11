@@ -40,7 +40,7 @@ int main(){
     int n;
     string first = "24:00:00",last = "00:00:00";
     string str1,str2,str3,id1,id2;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     scanf("%d",&n);
     for(int i = 0; i < n; i++){
         cin >> str1 >> str2 >> str3;
