@@ -46,7 +46,7 @@ struct node{
 int main(){
     int n,m,id,k,idn,deep,t;
     queue<node> q;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     cin >> n >> m;
     while(m--){
         scanf("%d %d",&id,&k);
