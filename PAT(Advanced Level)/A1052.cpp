@@ -58,7 +58,7 @@ struct node{
 int main(){
     int n, head,address,key,next;
     vector<node> nn;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     cin >> n >> head;
     for(int i = 0; i < n; i++){
         cin >> address >> key >> next;
@@ -71,7 +71,7 @@ int main(){
     if(!nn.empty()){
         sort(nn.begin(),nn.end());
         n = nn.size();
-        printf("%d %5d\n",n,nn[0].address);
+        printf("%d %05d\n",n,nn[0].address);
         for(int i = 0; i < n-1; i++){
             nn[i].next = nn[i+1].address;
             printf("%05d %d %05d\n",nn[i].address,nn[i].key,nn[i].next);
