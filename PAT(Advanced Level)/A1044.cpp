@@ -76,9 +76,9 @@ bool deal(int a[],int n,int &m){
 }
 
 int main(){
-    int n,m,a[100001];
+    int n,m,a[100002];
     bool flag = false;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     cin >> n >> m;
     for(int i = 1; i <= n; i++){
         cin >> a[i];
