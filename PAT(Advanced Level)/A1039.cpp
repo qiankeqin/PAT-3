@@ -52,3 +52,41 @@ KAT3 3 2 4 5
 LOR6 4 1 2 4 5
 NON9 0
 */
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#define MAX (26*26*26*10+1)
+using namespace std;
+int hash_fun(char str[]){
+    return (str[0]-'A') * 26 * 26 * 10      \
+    + (str[1] - 'A') * 26 * 10              \
+    + (str[2] - 'A') * 10                   \
+    + (str[3] - '0');
+}
+
+int main(){
+    int N,K,id,stu_num,k;
+    char stu_name[5];
+    vector<int> map[MAX];
+    scanf("%d %d",&N,&K);
+    for(int i = 0; i < K ; i++){
+        scanf("%d %d",&id,&stu_num);
+        for(int j  = 0; j < stu_num; j++){
+            scanf("%s",stu_name);
+            map[hash_fun(stu_name)].push_back(id);
+        }
+    }
+    for(int i = 0; i < N; i++){
+        scanf("%s",stu_name);
+        k = hash_fun(stu_name);
+        printf("%s %d",stu_name,map[k].size());
+        sort(map[k].begin(),map[k].end());
+        for(int j = 0; j < map[k].size(); j++){
+            printf(" %d",map[k][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
