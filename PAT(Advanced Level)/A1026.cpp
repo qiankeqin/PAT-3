@@ -73,13 +73,13 @@ struct player{
     }
 }p[10001];
 struct table{
-    int isVIP,endTime,se_num;
+    int isVIP,endTime,serveNum;
 }t[101];
 
 int main(){
     int n,k,m,tmp,hour,minute,second;;
     vector<int> rq;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     cin >> n;
     for(int i = 0; i < n; i++){
         scanf("%d:%d:%d %d %d",&hour,&minute,&second,&tmp,&p[i].isVIP);
@@ -138,7 +138,7 @@ int main(){
         }
         p[ppp].serveStart = max(p[ppp].start,(*pt).endTime);
         (*pt).endTime = p[ppp].serveStart + p[ppp].timeNeed;
-        (*pt).se_num ++;
+        (*pt).serveNum ++;
         p[ppp].isOut = 1;
         rq.push_back(ppp);
         while(p[head].isOut) head++;
@@ -148,8 +148,8 @@ int main(){
             printf("%02d:%02d:%02d %02d:%02d:%02d %d\n",st/3600,st%3600/60,st%60,est/3600,est%3600/60,est%60,(int)((est-st+30)/60));
     }
     for(int i = 1; i <= k-1; i++){
-        printf("%d ",t[i].se_num);
+        printf("%d ",t[i].serveNum);
     }
-    printf("%d\n",t[k].se_num);
+    printf("%d\n",t[k].serveNum);
     return 0;
 }
