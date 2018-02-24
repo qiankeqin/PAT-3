@@ -34,7 +34,7 @@ int a[1000000],b[1000000];
 
 int main(){
     int n1,n2;
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     scanf("%d",&n1);
     for(int i = 0; i < n1; i++){
         scanf("%d",&a[i]);
