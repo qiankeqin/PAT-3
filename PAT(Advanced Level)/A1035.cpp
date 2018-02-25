@@ -82,7 +82,7 @@ int main(){
             printf("There is 1 account and no account is modified\n");
         }
         else{
-            printf("There is %d accounts and no account is modified\n",n);
+            printf("There are %d accounts and no account is modified\n",n);
         }
     }else{
         printf("%d\n",m);
