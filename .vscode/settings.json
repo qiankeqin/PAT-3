@@ -34,5 +34,6 @@
         "utility": "cpp",
         "vector": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "python.pythonPath": "C:\\Python\\Python36\\python.exe"
 }

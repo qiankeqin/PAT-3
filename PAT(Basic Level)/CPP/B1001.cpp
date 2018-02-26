@@ -25,8 +25,7 @@
 */
 #include <stdio.h>
 
-int main()
-{
+int main(){
 	int n,i=0;
 	scanf("%d",&n);
 	while(n != 1){

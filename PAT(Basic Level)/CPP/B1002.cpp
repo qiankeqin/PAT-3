@@ -20,12 +20,10 @@ yi san wu
 */
 #include <stdio.h>
 #include <string.h>
-
-int main()
-{
-	char* num[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
+const char* num[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
+int num2[100];
+int main(){
 	int result=0,i=0;
-	int num2[100];
 	char str[100] = {};
 	fgets(str,102,stdin);
 	while(i < strlen(str)-1){
