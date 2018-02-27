@@ -36,3 +36,34 @@ Sample Input:
 Sample Output:
 7
 */
+
+#include <iostream>
+using namespace std;
+int dp[10001],index[10001],col[10001],fav[201],mp[201];
+
+int main(){
+    int n,m,l,maxlen;
+    cin >> n >> m;
+    for(int i = 0 ; i < m; i++){
+        cin >> fav[i];
+        mp[fav[i]] = i+1;
+    }
+    cin >> l;
+    for(int i = 0 ; i < l; i++){
+        cin >> col[i];
+        int k = mp[col[i]];
+        if(k == 0){
+            dp[i] = 0;
+        }else{
+            dp[i] = 1;
+            for(int j = i-1; j >= 0; j--){
+                if(mp[col[j]] <= k){
+                    dp[i] = max(dp[j]+1,dp[i]);
+                }
+            }
+            maxlen = max(maxlen,dp[i]);
+        }
+    }
+    printf("%d",maxlen);
+    return 0;
+}
