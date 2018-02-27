@@ -18,27 +18,25 @@
 输出样例：
 yi san wu
 */
-#include <stdio.h>
-#include <string.h>
+
+#include <cstdio>
+#include <cstring>
 const char* num[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
-int num2[100];
+char str[100];
+int r[100];
 int main(){
-	int result=0,i=0;
-	char str[100] = {};
-	fgets(str,102,stdin);
-	while(i < strlen(str)-1){
+	int result = 0,k;
+	gets(str);
+	for(int i = 0;i < strlen(str); i++){
 		result += str[i] - '0';
-		i++;
 	}
-	i = 0;
-	while(result != 0){
-		num2[i]=result%10;
+	for(k = 0; result != 0; k++){		//从右往左(从个位开始)开始记录结果的每一位数
+		r[k]=result%10;
 		result /= 10;
-		i ++;
 	}
-	while(--i){
-		printf("%s ",num[num2[i]]);
+	while(--k){							//倒着输出结果
+		printf("%s ",num[r[k]]);
 	}
-	printf("%s",num[num2[0]]);
+	printf("%s",num[r[0]]);
 	return 0;
 }

@@ -23,17 +23,18 @@
 输出样例：
 5
 */
-#include <stdio.h>
+
+
+#include <cstdio>
 
 int main(){
-	int n,i=0;
+	int n,i;
 	scanf("%d",&n);
-	while(n != 1){
+	for(i = 0;n != 1; i++){
 		if(n % 2 != 0){
 			n = 3 * n + 1;
 		}
 		n /= 2;
-		i++;
 	}
 	printf("%d",i);
 	return 0;

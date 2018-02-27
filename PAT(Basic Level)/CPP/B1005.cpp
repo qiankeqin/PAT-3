@@ -28,50 +28,37 @@
 7 6
 */
 
-//从第一个开始判断，如其他数字被包含就赋值为零，判断到最后结束。
-#include <stdio.h>
+//从第一个开始判断，如其他num被包含就将mp[num]赋值为零，判断到最后结束。输出mp[num] != 0 的num;
+#include <iostream>
+using namespace std;
+int num[101],mp[101];
 
 int main(){
-	int n,i,j,k,tmp,num[100];
-	scanf("%d",&n);
-	for(i = 0; i < n; i ++){
-		scanf("%d",&num[i]);
-	}
-	for(i = 0; i < n; i ++){
-		if(num[i] == 0) continue;
-		tmp = num[i];
-		while(tmp != 1){
-			for(j = 0; j < n; j++){
-				if(i == j) continue;
-				if(tmp == num[j]){
-					num[j] = 0;
-				}
-			}
-			if(tmp % 2 == 1){
-				tmp = (tmp*3+1)/2;
-			}else{
-				tmp = tmp/2;
-			}
-		}
-	}
-	k = 0;
-	for(i = 0;i < n ;i ++){
-		if(num[i] != 0){
-			num[k] = num[i];
-			k++;
-		}
-	}
-	for(i = 0; i < k; i++)
-		for(j = i; j < k; j++){
-			if(num[i] < num[j]){
-				tmp = num[j];
-				num[j] = num[i];
-				num[i] = tmp;
-			}
-		}
-	for(i = 0 ; i < k-1; i++){
-		printf("%d ",num[i]);
-	}
-	printf("%d",num[j-1]);
-	return 0;
+    int n, k = 0;
+    scanf("%d",&n);
+    for(int i = 0; i < n; i ++){
+        scanf("%d",&num[i]);
+        mp[num[i]] = 1;
+    }
+    for(int i = 0; i < n; i ++){
+        if(mp[num[i]] == 1){
+            int tmp = num[i];
+            while(tmp != 1){
+                if(tmp % 2 == 1){
+                    tmp = tmp*3+1;
+                }
+                tmp = tmp/2;
+                if(tmp <= 100 && mp[tmp]) mp[tmp] = 0;
+            }
+        }
+    }
+    for(int i = 100;i >= 0; i--){
+        if(mp[i] != 0){
+            num[k++] = i;
+        }
+    }
+    for(int i = 0 ; i < k; i++){
+        printf("%d%c",num[i],i == k-1?'\n':' ');
+    }
+    return 0;
 }

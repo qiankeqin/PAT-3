@@ -42,3 +42,30 @@ NO
 NO
 NO
 """
+# 结论:
+# 只能出现P(只能出现一次),A,T(只能出现一次)三个字母,且必须都出现;不能出现其他字符
+# P之前的A的个数 * PT之间的A的个数 = T之后的A的个数
+# 推导：
+# 1: PAT		0 = 0
+# 2: xPATx		x = x
+# 3: 如果 aPbTc 要正确,根据1,2可得b只能为'A',即aPATc;再由2可得 a = c;
+#	 那么 aPbATca 即 aPAATac; 又 a=c => aPAATaa
+
+n = int(input())
+for k in range(n):
+    p1,t1,a1,p2,t2 = 0,0,0,0,0 #p1:P的个数; t1:T的个数; a1:A的个数; p2:P所在的位置; t2:T所在的位置
+    s = str(input())
+    for i,c in enumerate(s):
+        if c == 'P':
+            p1,p2= p1+1,i
+        elif c == 'T':
+            t1,t2 = t1+1,i
+        elif c == 'A':
+            a1 += 1
+    if p1 != 1 or t1 != 1 or p1+t1+a1 < len(s) or t2 <= p2 + 1: # P不只出现1次(0次) or T不只出现1次(0次) or 有其他字符 or (P出现在T之前,PT相邻的情况)
+        print("NO")
+    else:
+        if p2*(t2-p2-1) == len(s)-t2-1:	#P所在的位置index即P之前A的个数
+            print("YES")
+        else:
+            print("NO")
