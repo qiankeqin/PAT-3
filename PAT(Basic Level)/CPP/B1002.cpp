@@ -25,18 +25,18 @@ const char* num[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
 char str[100];
 int r[100];
 int main(){
-	int result = 0,k;
-	gets(str);
-	for(int i = 0;i < strlen(str); i++){
-		result += str[i] - '0';
-	}
-	for(k = 0; result != 0; k++){		//从右往左(从个位开始)开始记录结果的每一位数
-		r[k]=result%10;
-		result /= 10;
-	}
-	while(--k){							//倒着输出结果
-		printf("%s ",num[r[k]]);
-	}
-	printf("%s",num[r[0]]);
-	return 0;
+    int result = 0,k;
+    gets(str);
+    for(int i = 0;i < strlen(str); i++){
+        result += str[i] - '0';
+    }
+    for(k = 0; result != 0; k++){		//从右往左(从个位开始)开始记录结果的每一位数
+        r[k]=result%10;
+        result /= 10;
+    }
+    while(--k){							//倒着输出结果
+        printf("%s ",num[r[k]]);
+    }
+    printf("%s",num[r[0]]);
+    return 0;
 }

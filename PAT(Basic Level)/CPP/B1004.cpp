@@ -33,25 +33,25 @@ Joe Math990112
 
 #include <cstdio>
 struct Student{
-	char name[11];
-	char num[11];
-	int score;
+    char name[11];
+    char num[11];
+    int score;
 }s[1000];
 
 int main(){
-	int n,highest = 0,lowest = 0;
-	scanf("%d",&n);
-	for(int i = 0; i < n; i++){
-		scanf("%s %s %d",s[i].name,s[i].num,&(s[i].score));
-	}
-	for(int i = 0; i < n; i++){
-		if(s[i].score > s[highest].score){
-			highest = i;
-		}else if(s[i].score < s[lowest].score){
-			lowest = i;
-		}
-	}
-	printf("%s %s\n",s[highest].name,s[highest].num);
-	printf("%s %s\n",s[lowest].name,s[lowest].num);
-	return 0;
+    int n,highest = 0,lowest = 0;
+    scanf("%d",&n);
+    for(int i = 0; i < n; i++){
+        scanf("%s %s %d",s[i].name,s[i].num,&(s[i].score));
+    }
+    for(int i = 0; i < n; i++){
+        if(s[i].score > s[highest].score){
+            highest = i;
+        }else if(s[i].score < s[lowest].score){
+            lowest = i;
+        }
+    }
+    printf("%s %s\n",s[highest].name,s[highest].num);
+    printf("%s %s\n",s[lowest].name,s[lowest].num);
+    return 0;
 }

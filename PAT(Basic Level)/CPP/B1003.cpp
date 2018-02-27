@@ -56,33 +56,33 @@ NO
 #include <cstring>
 
 int main(){
-	char str[101],tmp;
-	int n;
-	scanf("%d%c",&n,&tmp);
-	while(n--){
-		int p1 = 0,t1 = 0,a1 = 0,p2,t2,strl;//p1:P的个数; t1:T的个数; a1:A的个数; p2:P所在的位置; t2:T所在的位置
-		gets(str);
-		strl = strlen(str);
-		for(int i = 0; i < strl; i++){
-			if(str[i] == 'P'){
-				p1 ++;
-				p2 = i;
-			}else if(str[i] == 'T'){
-				t1 ++;
-				t2 = i;
-			}else if(str[i] == 'A'){
-				a1 ++;
-			}
-		}
-		if(p1 != 1 || t1 != 1 || p1+t1+a1 < strl || t2 <= p2 + 1){ // P不只出现1次(0次) || T不只出现1次(0次)|| 有其他字符 || (P出现在T之前,PT相邻的情况)
-			printf("NO\n");
-		}else{
-			if(p2*(t2-p2-1) == strl-t2-1){	//P所在的位置index即P之前A的个数
-				printf("YES\n");
-			}else{
-				printf("NO\n");
-			}
-		}
-	}
-	return 0;
+    char str[101],tmp;
+    int n;
+    scanf("%d%c",&n,&tmp);
+    while(n--){
+        int p1 = 0,t1 = 0,a1 = 0,p2,t2,strl;//p1:P的个数; t1:T的个数; a1:A的个数; p2:P所在的位置; t2:T所在的位置
+        gets(str);
+        strl = strlen(str);
+        for(int i = 0; i < strl; i++){
+            if(str[i] == 'P'){
+                p1 ++;
+                p2 = i;
+            }else if(str[i] == 'T'){
+                t1 ++;
+                t2 = i;
+            }else if(str[i] == 'A'){
+                a1 ++;
+            }
+        }
+        if(p1 != 1 || t1 != 1 || p1+t1+a1 < strl || t2 <= p2 + 1){ // P不只出现1次(0次) || T不只出现1次(0次)|| 有其他字符 || (P出现在T之前,PT相邻的情况)
+            printf("NO\n");
+        }else{
+            if(p2*(t2-p2-1) == strl-t2-1){	//P所在的位置index即P之前A的个数
+                printf("YES\n");
+            }else{
+                printf("NO\n");
+            }
+        }
+    }
+    return 0;
 }

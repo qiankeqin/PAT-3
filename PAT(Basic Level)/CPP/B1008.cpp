@@ -24,40 +24,40 @@
 #include <stdio.h>
 
 int gcd(int a,int b){
-	int t;
-	while(b != 0){
-		t = a%b;
-		a = b;
-		b = t;
-	}
-	return a;
+    int t;
+    while(b != 0){
+        t = a%b;
+        a = b;
+        b = t;
+    }
+    return a;
 }
 
 int main(){
-	int n,m,i,j,k,a,num[100],tmp1,tmp2;
-	scanf("%d",&n);
-	scanf("%d",&m);
-	k = gcd(n,m);
-	for(i=0; i < n; i ++ ){
-		scanf("%d",&num[i]);
-	}
-	for(i = 0; i < k; i ++ ){
-		j = i;
-		tmp2 = num[j];
-		while(1){
-			a = (j+m)%n;
-			tmp1 = num[a];
-			num[a] = tmp2;
-			tmp2 = tmp1;
-			j = a;
-			if(a == i){
-				break;
-			}
-		}
-	}
-	for(i = 0; i < n-1; i++){
-		printf("%d ",num[i]);
-	}
-	printf("%d",num[n-1]);
-	return 0;	
+    int n,m,i,j,k,a,num[100],tmp1,tmp2;
+    scanf("%d",&n);
+    scanf("%d",&m);
+    k = gcd(n,m);
+    for(i=0; i < n; i ++ ){
+        scanf("%d",&num[i]);
+    }
+    for(i = 0; i < k; i ++ ){
+        j = i;
+        tmp2 = num[j];
+        while(1){
+            a = (j+m)%n;
+            tmp1 = num[a];
+            num[a] = tmp2;
+            tmp2 = tmp1;
+            j = a;
+            if(a == i){
+                break;
+            }
+        }
+    }
+    for(i = 0; i < n-1; i++){
+        printf("%d ",num[i]);
+    }
+    printf("%d",num[n-1]);
+    return 0;	
 }

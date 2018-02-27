@@ -28,14 +28,14 @@
 #include <cstdio>
 
 int main(){
-	int n,i;
-	scanf("%d",&n);
-	for(i = 0;n != 1; i++){
-		if(n % 2 != 0){
-			n = 3 * n + 1;
-		}
-		n /= 2;
-	}
-	printf("%d",i);
-	return 0;
+    int n,i;
+    scanf("%d",&n);
+    for(i = 0;n != 1; i++){
+        if(n % 2 != 0){
+            n = 3 * n + 1;
+        }
+        n /= 2;
+    }
+    printf("%d",i);
+    return 0;
 }

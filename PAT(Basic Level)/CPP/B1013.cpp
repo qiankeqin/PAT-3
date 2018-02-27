@@ -27,33 +27,33 @@
 using namespace std;
 
 int isSushu(int a){
-	int t = (int)(sqrt(a));
-	for(int i = 2; i <= t; i++){
-		if( a%i == 0){
-			return false;
-		}
-	}
-	return true;
+    int t = (int)(sqrt(a));
+    for(int i = 2; i <= t; i++){
+        if( a%i == 0){
+            return false;
+        }
+    }
+    return true;
 }
 
 int main(int argc, char const *argv[]){
-	int m,n;
-	int j = 0;
-	scanf("%d %d",&m,&n);
-	for(int i = 2;j < n; i++){
-		if(isSushu(i)){
-			if(j >= m-1){
-				if((j-m+1) % 10 == 0){
-					printf("%d",i);
-				}else{
-					printf(" %d",i);
-				}
-				if((j-m+1) % 10 == 9){
-					printf("\n");
-				}
-			}
-			j++;
-		}
-	}
-	return 0;
+    int m,n;
+    int j = 0;
+    scanf("%d %d",&m,&n);
+    for(int i = 2;j < n; i++){
+        if(isSushu(i)){
+            if(j >= m-1){
+                if((j-m+1) % 10 == 0){
+                    printf("%d",i);
+                }else{
+                    printf(" %d",i);
+                }
+                if((j-m+1) % 10 == 9){
+                    printf("\n");
+                }
+            }
+            j++;
+        }
+    }
+    return 0;
 }
