@@ -25,6 +25,7 @@
 输出样例：
 5
 """
+
 n = int(input())
 cnt = 0
 while n != 1:
