@@ -24,21 +24,21 @@ BBSSS1234
 输出样例2：
 SS123
 */
-#include <stdio.h>
+#include <cstdio>
 
 int main(){
-	int n,b,s,g,i;
+	int n,b,s,g;
 	scanf("%d",&n);
 	g = n%10;
 	s = n/10%10;
 	b = n/100%10;
-	for(i = 0; i < b; i++){
+	for(int i = 0; i < b; i++){
 		printf("B");
 	}
-	for(i = 0; i < s; i++){
+	for(int i = 0; i < s; i++){
 		printf("S");
 	}
-	for(i = 0; i < g; i++){
+	for(int i = 0; i < g; i++){
 		printf("%d",i+1);
 	}
 	return 0;	

@@ -20,5 +20,5 @@
 | 1003 | 我要通过！(20)                | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/CPP/B1003.cpp) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/Python/B1003.py) |          |
 | 1004 | 成绩排名 (20)                 | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/CPP/B1004.cpp) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/Python/B1004.py) |          |
 | 1005 | 继续(3n+1)猜想 (25)           | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/CPP/B1005.cpp) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/Python/B1005.py) |          |
-|      |                               |                                                              |                                                              |          |
+| 1006 | 换个格式输出整数 (15)         | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/CPP/B1006.cpp) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Basic%20Level)/Python/B1006.py) |          |
 
