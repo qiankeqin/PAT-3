@@ -43,52 +43,41 @@ NO
 NO
 */
 
+// P之前的A数 乘以 PT之间的A数 等于 T之后的A数
 #include <stdio.h>
 #include <string.h>
 
-// P之前的A数 乘以 PT直接的A数 等于 T之后的A数
-
-int main()
-{
-	char str[101]={};
+int main(){
+	char str[101];
 	int n,p1,p2,t1,t2,a1,i,strl;
 	scanf("%d",&n);
 	getchar();
-	while(n--)
-	{
+	while(n--){
 		fgets(str,102,stdin);
 		strl = strlen(str) - 1;
 		i = 0;
 		p1 = 0; 
 		t1 = 0;
 		a1 = 0;
-		while(i < strl)
-		{
-			if(str[i] == 'P')
-			{
+		while(i < strl){
+			if(str[i] == 'P'){
 				p1 ++;
 				p2 = i;		
-			}else if(str[i] == 'T')
-			{
+			}else if(str[i] == 'T'){
 				t1 ++;
 				t2 = i;
-			}else if(str[i] == 'A')
-			{
+			}else if(str[i] == 'A'){
 				a1 ++;
 			}
 			i++;
 		}
-		if(p1 != 1 || t1 != 1 || p1+t1+a1 < strl || t2 <= p2 + 1)
-		{
+		if(p1 != 1 || t1 != 1 || p1+t1+a1 < strl || t2 <= p2 + 1){
 			printf("NO\n");
 		}
-		else
-		{
-			if(p2 * (t2 - p2 - 1)  == strl - 1 - t2)
-			{
+		else{
+			if(p2 * (t2 - p2 - 1)  == strl - 1 - t2){
 				printf("YES\n");
-			}else
-			{
+			}else{
 				printf("NO\n");
 			}
 		}
