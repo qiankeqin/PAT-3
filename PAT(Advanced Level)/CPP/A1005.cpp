@@ -31,7 +31,6 @@ int a[110];
 
 int main(){
     int n,sum = 0;
-    //freopen("in/in.txt","r",stdin);
     gets(str);
     n = strlen(str);
     for(int i = 0; i < n; i++){

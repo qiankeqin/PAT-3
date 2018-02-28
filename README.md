@@ -7,7 +7,54 @@
 | ID   | Title           | C/C++                                                        | Python | Keywords |
 | ---- | --------------- | ------------------------------------------------------------ | ------ | -------- |
 | 1001 | A+B Format (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1001.cpp) |      | 字符串   |
-|      |                 |                                                              |        |          |
+| 1002 | A+B for Polynomials (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1002.cpp) |        |  |
+| 1003 | Emergency (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1003.cpp) | | Dijkstra算法 |
+| 1004 | Counting Leaves (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1004.cpp) | | 层序遍历 |
+| 1005 | Spell It Right (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1005.cpp) | | |
+| 1006 | Sign In and Sign Out (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1006.cpp) | | |
+| 1007 | Maximum Subsequence Sum (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1007.cpp) | | |
+| 1008 | Elevator (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1008.cpp) | | 模拟 |
+| 1009 | Product of Polynomials | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1009.cpp) | | |
+| 1010 | Radix (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1010.cpp) | | |
+| 1011 | World Cup Betting (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1011.cpp) | | |
+| 1012 | The Best Rank (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1012.cpp) | | |
+| 1013 | Battle Over Cities (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1013.cpp) | | 图的联通量 |
+| 1014 | Waiting in Line (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1014.cpp) | | |
+| 1015 | Reversible Primes (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1015.cpp) | | |
+| 1016 | Phone Bills (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1016.cpp) | | 字符串 |
+| 1017 | Queueing at Bank (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1017.cpp) | | 模拟 |
+| 1018 | Public Bike Management (30) |  | | |
+| 1019 | General Palindromic Number (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1019.cpp) | | |
+| 1020 | Tree Traversals (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1020.cpp) | | |
+| 1021 |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
+|  |  |  | | |
 
 
 

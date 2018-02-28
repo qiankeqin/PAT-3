@@ -60,7 +60,7 @@ N/A
 #include <map>
 using namespace std;
 const char clas[4] = {'A','C','M','E'};
-int dp[4][101]={0};
+int dp[4][101]={0}; //用来记录每科的各个分数的人数,从100往下加到某人的分数(如 99)时，即排名为 1+dp[100]+dp[99]+dp[98]
 struct student{
     int id;
     int sco[4];
@@ -91,7 +91,7 @@ int main(){
                 cla = j;
             }
         }
-        mp[s[i].id] = make_pair(best,clas[cla]);
+        mp[s[i].id] = make_pair(best,clas[cla]);    //记录当前学生的最好排名和科目
     }
     for(int i = 0; i < n2; i++){
         scanf("%d",&id);

@@ -39,8 +39,8 @@ Sample Output
 */
 
 
-//图, Dijkstra算法, 动态规划
-//判断条件 首先是否最短，其次该条路径上能交叫的帮手最多
+// Dijkstra算法
+//判断条件 首先是否最短,其次该条路径上能交叫的帮手最多
 //ci[i] 为当前城市的帮手数
 //pc[i] 为从源点到当前点i的路径数
 //rt[i] 为从源点到当前点i的最大帮手数
@@ -63,7 +63,7 @@ int n,ci[MAXN],v[MAXN][MAXN],vis[MAXN],dp[MAXN],pc[MAXN],rt[MAXN];
 
 void find(int start,int end){
     fill(dp,dp+MAXN,INF);
-    dp[start] = 0;
+    dp[start] = 0;              //初始条件
     pc[start] = 1;
     rt[start] = ci[start];
     for(int cnt = 0; cnt < n; cnt++){

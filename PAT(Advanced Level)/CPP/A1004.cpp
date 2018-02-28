@@ -36,15 +36,14 @@ Sample Output
 #include <queue>
 using namespace std;
 const int MAXN = 101;
-int count[MAXN] = {0};
-
+int count[MAXN];
 struct node{
     int layer;
     queue<int> child;
 }r[MAXN],no;
 
 int main(){
-    int n,m,id,k,idn,deep,t;
+    int n,m,id,k,deep,t;
     queue<node> q;
     //freopen("in/in.txt","r",stdin);
     cin >> n >> m;
@@ -63,10 +62,10 @@ int main(){
         q.pop();
         if(no.child.empty()) count[deep]++;
         while(!no.child.empty()){
-            idn = no.child.front();
+            int i = no.child.front();
             no.child.pop();
-            r[idn].layer = deep + 1;
-            q.push(r[idn]);
+            r[i].layer = deep + 1;
+            q.push(r[i]);
         }
     }
     for(int i = 1; i < deep; i++){

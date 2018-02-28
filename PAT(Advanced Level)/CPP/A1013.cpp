@@ -52,7 +52,7 @@ void dfs(int index){
         }
     }
 }
-
+//DFS的次数 即为联通量的个数
 int cal_liantong(int j){
     int count = 0;
     fill(vis,vis+n+1,0);

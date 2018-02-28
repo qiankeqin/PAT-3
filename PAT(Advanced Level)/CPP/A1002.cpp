@@ -24,60 +24,29 @@ Sample Output
 3 2 1.5 1 2.9 0 3.2
 */
 #include <iostream>
-#include <algorithm>
-#include <cstdio>
+#include <vector>
+#include <map>
 using namespace std;
-
-struct poly{
-    int exp;
-    double coe;
-};
+double mp[1001];
 int main(){
-    int n1,n2;
-    poly p1[11],p2[11],r[22];
-    cin >> n1;
-    for(int i = 0; i < n1; i++){
-        cin >> p1[i].exp >> p1[i].coe;
-    }
-    cin >> n2;
-    for(int  i = 0; i < n2; i++){
-        cin >> p2[i].exp >> p2[i].coe;
-    }
-
-    int k = 0,i = 0,j = 0; 
-    while(i < n1 && j < n2){
-        if(p1[i].exp == p2[j].exp){
-            r[k].exp = p1[i].exp;
-            r[k].coe = p1[i++].coe + p2[j++].coe;
-            if(r[k].coe == 0){
-                continue;
-            }
-        }else if(p1[i].exp > p2[j].exp){
-            r[k].coe = p1[i].coe;
-            r[k].exp = p1[i++].exp;
-        }else{
-            r[k].coe = p2[j].coe;
-            r[k].exp = p2[j++].exp;
+    int n,coe;
+    double exp;
+    vector<pair<int,double>> r;
+    for(int i = 0; i < 2; i++){
+        cin >> n;
+        while(n--){
+            cin >> coe >> exp;
+            mp[coe] += exp;
         }
-        k++;
     }
-    while(i < n1){
-        r[k].exp = p1[i].exp;
-        r[k++].coe = p1[i++].coe;
-    }
-    while(j < n2){
-        r[k].exp = p2[j].exp;
-        r[k++].coe = p2[j++].coe;
-    }
-
-    if(k > 0){
-        cout << k << ' ';
-        for(int i = 0; i < k - 1; i++){
-            printf("%d %.1f ",r[i].exp,r[i].coe);
+    for(int i = 1000; i >= 0; i--){
+        if(mp[i] != 0){
+            r.push_back(make_pair(i,mp[i]));
         }
-        printf("%d %.1f\n",r[k-1].exp,r[k-1].coe);
-    }else{
-        printf("0\n");
+    }
+    printf("%d",r.size());
+    for(int i = 0; i < r.size(); i++){
+        printf(" %d %.1lf",r[i].first,r[i].second);
     }
     return 0;
 }

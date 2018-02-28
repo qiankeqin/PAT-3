@@ -37,7 +37,6 @@ Sample Output:
 #include <queue>
 using namespace std;
 const int MAXN = 40;
-
 typedef struct node{
     int data;
     node* left;
