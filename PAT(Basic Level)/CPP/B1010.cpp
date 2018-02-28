@@ -20,31 +20,23 @@
 12 3 -10 1 6 0
 */
 #include <cstdio>
-
-int main(int argc, char const *argv[])
-{
-	int xiShu[1000],zhiShu[1000];
-	int j = 0;
-	while(~scanf("%d %d",&xiShu[j],&zhiShu[j])){
-		if(zhiShu[j] == 0){
-			break;
-		}
-		xiShu[j] = xiShu[j] * zhiShu[j];
-		if (zhiShu[j] != 0){
-			zhiShu[j] -= 1;
-		}
-		j++;
-	}
-	for (int i = 0; i < j; ++i){
-		if(xiShu[i] != 0){
-			printf("%d %d",xiShu[i],zhiShu[i]);
-		}
-		if(xiShu[i+1] != 0 && i+1 < j){
-			printf(" ");
-		}
-	}
-	if(j == 0){
-		printf("0 0");
-	}
-	return 0;
+int q[1000];
+int main(){
+    int xiShu,zhiShu,k = 0;
+    while(scanf("%d %d",&xiShu,&zhiShu) != EOF){
+        xiShu = xiShu * zhiShu;
+        if(--zhiShu != -1){
+            q[k++] = xiShu;
+            q[k++] = zhiShu;
+        }
+    }
+    if(k == 0){
+        printf("0 0");
+    }else{
+        for(int i = 0; i < k-1; i++){
+            printf("%d ",q[i]);
+        }
+        printf("%d",q[k-1]);
+    }
+    return 0;
 }

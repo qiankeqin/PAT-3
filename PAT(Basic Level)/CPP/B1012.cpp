@@ -31,71 +31,62 @@ N 11 2 N 9
 */
 
 #include <cstdio>
-#include <cstring>
+#include <algorithm>
 using namespace std;
 
-int main(int argc, char const *argv[]){
-	int num;
-	int N;
-	int num1,num2,num3,num4,num5;
-	int i2 = 0,i4 = 0;
-	double aver;
-	num1 = num2 = num3 = num4 = num5 = 0;
-	scanf("%d",&N);
-	while(N--){
-		scanf("%d",&num);
-		switch(num % 5){
-			case 0:
-				if(num % 2 == 0){
-					num1 += num;
-				}
-				break;
-			case 1:
-				if(i2 % 2 == 0){
-					num2 += num;
-				}else{
-					num2 -= num;
-				}
-				i2 ++;
-				break;
-			case 2:
-				num3 ++;
-				break;
-			case 3:
-				num4 += num;
-				i4 ++;
-				break;
-			case 4:
-				if(num > num5){
-					num5 = num;
-				}
-				break;
-		}
-	}
-
-	if(i4 != 0)
-	{
-		aver =1.0 * num4 / i4;
-	}
-	if(num1 != 0) 
-		printf("%d ",num1);
-	else 
-		printf("N ");
-	if(i2 != 0) 
-		printf("%d ",num2);
-	else 
-		printf("N ");
-	if(num3 != 0)
-		printf("%d ",num3);
-	else
-		printf("N ");
-	if(i4 != 0)
-		printf("%.1f ",aver);
-	else
-		printf("N ");
-	if(num5 != 0)
-		printf("%d",num5);
-	else
-		printf("N");
-	return 0;
+int main(){
+    int num, N, num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0,cnt2 = 0,cnt4 = 0;
+    double aver;
+    scanf("%d",&N);
+    while(N--){
+        scanf("%d",&num);
+        switch(num % 5){
+            case 0:
+                if(num % 2 == 0){
+                    num1 += num;
+                }
+                break;
+            case 1:
+                if(cnt2++ % 2 == 0){
+                    num2 += num;
+                }else{
+                    num2 -= num;
+                }
+                break;
+            case 2:
+                num3 ++;
+                break;
+            case 3:
+                num4 += num;
+                cnt4 ++;
+                break;
+            case 4:
+                num5 = max(num,num5);
+                break;
+        }
+    }
+    if(cnt4 != 0){
+        aver =1.0 * num4 / cnt4;
+    }
+    if(num1 != 0) 
+        printf("%d ",num1);
+    else 
+        printf("N ");
+    if(cnt2 != 0) 
+        printf("%d ",num2);
+    else 
+        printf("N ");
+    if(num3 != 0)
+        printf("%d ",num3);
+    else
+        printf("N ");
+    if(cnt4 != 0)
+        printf("%.1f ",aver);
+    else
+        printf("N ");
+    if(num5 != 0)
+        printf("%d",num5);
+    else
+        printf("N");
+    return 0;
 }

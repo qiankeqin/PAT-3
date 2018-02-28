@@ -33,7 +33,7 @@ int main(){
         scanf("%d",&num[i]);
     }
     m = n - m % n;
-    if(m != 0){
+    if(m != 6){
         reverse(num,num+m);
         reverse(num+m,num+n);
         reverse(num,num+n);

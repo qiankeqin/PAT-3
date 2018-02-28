@@ -32,22 +32,16 @@ Case #4: false
 using namespace std;
 
 int main(){
-	int N;
-	long int a,b,c;
-	bool r = false;
-	scanf("%d",&N);
-	for (int i = 0; i < N; ++i){
-		scanf("%ld %ld %ld",&a,&b,&c);
-		if(a + b > c){
-			r = true;
-		}else{
-			r =false;
-		}
-		if(r){
-			printf("Case #%d: true\n",i+1);
-		}else{
-			printf("Case #%d: false\n",i+1);
-		}
-	}
-	return 0;
+    int N;
+    long long a,b,c;
+    scanf("%d",&N);
+    for (int i = 0; i < N; ++i){
+        scanf("%lld %lld %lld",&a,&b,&c);
+        if(a + b > c){
+            printf("Case #%d: true\n",i+1);
+        }else{
+            printf("Case #%d: false\n",i+1);
+        }
+    }
+    return 0;
 }

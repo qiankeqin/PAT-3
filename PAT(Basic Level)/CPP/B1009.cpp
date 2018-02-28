@@ -20,25 +20,21 @@ Hello World Here I Come
 Come I Here World Hello
 */
 
-#include <stdio.h>
+#include <cstdio>
 
-int main()
-{
-	int i = 0;
-	char a[80][100];
-	while(1)
-	{
-		scanf("%s",*(a + i));
-		i++;
-		if(getchar() == '\n')
-		{
-			break;	
-		}
-	}
-	while(--i)
-	{
-		printf("%s ",*(a+i));
-	}
-	printf("%s",*a);
-	return 0;	
+int main(){
+    int i = 0;
+    char a[80][100];
+    while(1){
+        scanf("%s",*(a + i));
+        i++;
+        if(getchar() == '\n'){
+            break;	
+        }
+    }
+    while(--i){
+        printf("%s ",*(a+i));
+    }
+    printf("%s",*a);
+    return 0;	
 }
