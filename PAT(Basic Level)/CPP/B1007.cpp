@@ -20,41 +20,28 @@
 输出样例：
 4
 */
-#include <stdio.h>
-#include <math.h>
 
-int isSushu(int a)
-{
-	int i,m;
-	m = sqrt(a);
-	for(i = 2; i<=m; i++)
-	{
-		if(a%i == 0)
-		{
-			return 0;
-		}
-	}
-	return 1;
+#include <cstdio>
+#include <cmath>
+
+int isPrime(int a){
+    int m = sqrt(a);
+    for(int i = 2; i <= m; i++){
+        if(a%i == 0){
+            return 0;
+        }
+    }
+    return 1;
 }
 
-int main()
-{
-	int n,i,pn,pn1,j = 0;
-	scanf("%d",&n);
-	pn = 2;
-	for(i = 2; i <= n; i++)
-	{
-		if(isSushu(i))
-		{
-			pn1 = pn;
-			pn = i;
-			if(pn - pn1 == 2)
-			{
-				j++;
-			}
-		}
-	}
-	printf("%d",j);
-	return 0;
-	
+int main(){
+    int n,cnt = 0;
+    scanf("%d",&n);
+    for(int i = 2; i+2 <= n; i++){
+        if(isPrime(i) && isPrime(i+2)){
+            cnt++;
+        }
+    }
+    printf("%d",cnt);
+    return 0;
 }
