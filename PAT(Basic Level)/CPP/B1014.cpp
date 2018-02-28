@@ -28,51 +28,31 @@ THU 14:04
 */
 
 #include <iostream>
-#include <cstdio>
 #include <cstring>
+#define clock(c) ((c >= 'A' && c <= 'N')?c-'A'+10:c-'0')
 using namespace std;
+const char weekday[7][4]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
+char str[4][100];
 
-char weekday[7][4]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
-int main(int argc, char const *argv[]){
-	char str1[100],str2[100],str3[100],str4[100];
-	char c1,c2;
-	char *p,*q;
-	int t = 0;
-	gets(str1);
-	gets(str2);
-	gets(str3);
-	gets(str4);
-	p = str1;
-	q = str2;
-	while(*p != '\0' && *q != '\0'){
-		if(*p >= 'A' && *p <= 'G' && *q == *p ){
-			c1 = *p;
-			break;
-		}
-		p++;
-		q++;
-	}
-	p++;q++;
-	while(*p != '\0' && *q != '\0'){
-		if(((*p >= 'A'&& *q <='N')||(*p >='0' && *p <= '9'))&& *p == *q){
-			c2 = *p;
-			break;
-		}
-		p++;
-		q++;
-	}
-	p=str3;
-	q=str4;
-	while(*p != '\0' && *q != '\0'){
-		if(((*p >= 'a' && *p <= 'z')||(*p >= 'A' && *p <= 'Z'))&& *p == *q){
-			break;
-		}
-		t++;
-		p++;
-		q++;
-	}
-	printf("%s ", weekday[c1-'A']);
-	printf("%02d:",(c2 >= 'A' && c2 <= 'N')?c2-'A'+10:c2-'0');
-	printf("%02d\n", t);
-	return 0;
+int main(){
+    char c1,c2,*p,*q;
+    for(int i = 0; i < 4; i++){
+        gets(str[i]);
+    }
+    for(p = str[0],q = str[1];*p != '\0' && *q != '\0'; p++,q++){
+        if(*p >= 'A' && *p <= 'G' && *q == *p ){
+            c1 = *p;
+            break;
+        }
+    }
+    for(p++, q++; *p != '\0' && *q != '\0'; p++,q++){
+        if(((*p >= 'A' && *p <='N')||isdigit(*p))&& *p == *q){
+            c2 = *p;
+            break;
+        }
+    }
+    int t = 0;
+    for(p=str[2],q=str[3]; !(isalpha(*p) && *p == *q); t++,p++,q++);
+    printf("%s %02d:%02d", weekday[c1-'A'], clock(c2), t);
+    return 0;
 }

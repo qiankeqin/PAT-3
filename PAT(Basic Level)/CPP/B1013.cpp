@@ -22,31 +22,29 @@
 */
 
 #include <cstdio>
-#include <cmath>
-
+#include <math.h>
 using namespace std;
 
-int isSushu(int a){
+int isPrime(int a){
     int t = (int)(sqrt(a));
     for(int i = 2; i <= t; i++){
-        if( a%i == 0){
+        if( a % i == 0){
             return false;
         }
     }
     return true;
 }
 
-int main(int argc, char const *argv[]){
-    int m,n;
-    int j = 0;
+int main(){
+    int m,n,j = 0;
     scanf("%d %d",&m,&n);
-    for(int i = 2;j < n; i++){
-        if(isSushu(i)){
+    for(int num = 2; j < n; num++){
+        if(isPrime(num)){
             if(j >= m-1){
                 if((j-m+1) % 10 == 0){
-                    printf("%d",i);
+                    printf("%d",num);
                 }else{
-                    printf(" %d",i);
+                    printf(" %d",num);
                 }
                 if((j-m+1) % 10 == 9){
                     printf("\n");
