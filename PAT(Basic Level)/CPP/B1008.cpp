@@ -21,41 +21,24 @@
 输出样例：
 5 6 1 2 3 4
 */
-#include <stdio.h>
-
-int gcd(int a,int b){
-    int t;
-    while(b != 0){
-        t = a%b;
-        a = b;
-        b = t;
-    }
-    return a;
-}
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int num[100];
 
 int main(){
-    int n,m,i,j,k,a,num[100],tmp1,tmp2;
-    scanf("%d",&n);
-    scanf("%d",&m);
-    k = gcd(n,m);
-    for(i=0; i < n; i ++ ){
+    int n,m;
+    scanf("%d %d",&n,&m);
+    for(int i = 0; i < n; i ++ ){
         scanf("%d",&num[i]);
     }
-    for(i = 0; i < k; i ++ ){
-        j = i;
-        tmp2 = num[j];
-        while(1){
-            a = (j+m)%n;
-            tmp1 = num[a];
-            num[a] = tmp2;
-            tmp2 = tmp1;
-            j = a;
-            if(a == i){
-                break;
-            }
-        }
+    m = n - m % n;
+    if(m != 0){
+        reverse(num,num+m);
+        reverse(num+m,num+n);
+        reverse(num,num+n);
     }
-    for(i = 0; i < n-1; i++){
+    for(int i = 0; i < n-1; i++){
         printf("%d ",num[i]);
     }
     printf("%d",num[n-1]);
