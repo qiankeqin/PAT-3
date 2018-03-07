@@ -37,7 +37,7 @@
 | 1029 | Median (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1029.cpp) | | two pointers |
 | 1030 | Travel Plan (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1030.cpp) | | |
 | 1031 | Hello World for U (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1031.cpp) | | 字符串 |
-| 1032 | Sharing (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1032.cpp) | | |
+| 1032 | Sharing (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1032.cpp) | | 链表 |
 | 1033 | To Fill or Not to Fill (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1033.cpp) | | 贪心 |
 | 1034 | Head of a Gang (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1034.cpp) | | 字符串hash,并查集 |
 | 1035 | Password (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1035.cpp) | | 字符串 |
@@ -45,12 +45,12 @@
 | 1037 | Magic Coupon (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1037.cpp) | | 贪心 |
 | 1038 | Recover the Smallest Number (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1038.cpp) | | 排序 |
 | 1039 | Course List for Student (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1039.cpp) | | |
-| 1040 | Longest Symmetric String (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1040.cpp) | | |
-| 1041 | Be Unique (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1041.cpp) | | |
+| 1040 | Longest Symmetric String (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1040.cpp) | | 动态规划 |
+| 1041 | Be Unique (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1041.cpp) | | Hash散列 |
 | 1042 | Shuffling Machine (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1042.cpp) | | 模拟 |
-| 1043 | Is It a Binary Search Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1043.cpp) | | |
+| 1043 | Is It a Binary Search Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1043.cpp) | | BST |
 | 1044 | Shopping in Mars (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1044.cpp) | | |
-| 1045 | Favorite Color Stripe (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1045.cpp) | | |
+| 1045 | Favorite Color Stripe (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1045.cpp) | | 动态规划 |
 | 1046 | Shortest Distance (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1046.cpp) | | |
 | 1047 | Student List for Course (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1047.cpp) | | |
 | 1048 | Find Coins (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1048.cpp) | | |
