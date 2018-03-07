@@ -110,7 +110,7 @@
 | 1102 | Invert a Binary Tree (25) |  | | |
 | 1103 | Integer Factorization (30) |  | | |
 | 1104 | Sum of Number Segments (20) |  | | |
-| 1105 | Spiral Matrix (25) |  | | |
+| 1105 | Spiral Matrix (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1105.cpp) | | |
 | 1106 | Lowest Price in Supply Chain (25) |  | | |
 | 1107 | Social Clusters (30) |  | | |
 | 1108 | Finding Average (20) |  | | |
@@ -137,7 +137,7 @@
 | 1129 | Recommendation System (25) |  | | |
 | 1130 | Infix Expression (25) |  | | |
 | 1131 | Subway Map (30) |  | | |
-| 1132 | Cut Integer (20) |  | | |
+| 1132 | Cut Integer (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1132.cpp) | | |
 | 1133 | Splitting A Linked List (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1133.cpp) | | |
 | 1134 | Vertex Cover (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1134.cpp) | | hash数组 |
 | 1135 | Is It A Red-Black Tree (30) |  | | |
