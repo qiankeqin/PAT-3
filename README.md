@@ -117,7 +117,7 @@
 | 1109 | Group Photo (25) |  | | |
 | 1110 | Complete Binary Tree (25) |  | | |
 | 1111 | Online Map (30) |  | | |
-| 1112 | Stucked Keyboard (20) |  | | |
+| 1112 | Stucked Keyboard (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1112.cpp) | | map |
 | 1113 | Integer Set Partition (25) |  | | |
 | 1114 | Family Property (25) |  | | |
 | 1115 | Counting Nodes in a BST (30) |  | | |
