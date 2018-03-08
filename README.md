@@ -109,9 +109,9 @@
 | 1101 | Quick Sort (25) |  | | |
 | 1102 | Invert a Binary Tree (25) |  | | |
 | 1103 | Integer Factorization (30) |  | | |
-| 1104 | Sum of Number Segments (20) |  | | |
+| 1104 | Sum of Number Segments (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1104.cpp) | | |
 | 1105 | Spiral Matrix (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1105.cpp) | | |
-| 1106 | Lowest Price in Supply Chain (25) |  | | |
+| 1106 | Lowest Price in Supply Chain (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1106.cpp) | | 树的层序遍历 |
 | 1107 | Social Clusters (30) |  | | |
 | 1108 | Finding Average (20) |  | | |
 | 1109 | Group Photo (25) |  | | |

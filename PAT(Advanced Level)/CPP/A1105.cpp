@@ -33,7 +33,7 @@ Sample Output:
 #include <algorithm>
 #include <cmath>
 using namespace std;
-int mat[5][5], a[10000];
+int mat[10000][10000], a[10000];
 int dx[4] = {1,0,-1,0},dy[4] = {0,1,0,-1};
 int main(){
     int n, cm, cn, xs = 0, ys = 0, xe, ye, x = 0, y = 0;
