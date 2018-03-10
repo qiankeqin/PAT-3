@@ -75,7 +75,7 @@
 | 1067 | Sort with Swap(0,*) (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1067.cpp) | | |
 | 1068 | Find More Coins (30) |  | | |
 | 1069 | The Black Hole of Numbers (20) |  | | |
-| 1070 | Mooncake (25) |  | | |
+| 1070 | Mooncake (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1070.cpp) | | |
 | 1071 | Speech Patterns (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1071.cpp) | | |
 | 1072 | Gas Station (30) |  | | |
 | 1073 | Scientific Notation (20) |  | | |
@@ -100,22 +100,22 @@
 | 1092 | To Buy or Not to Buy (20) |  | | |
 | 1093 | Count PAT's (25) |  | | |
 | 1094 | The Largest Generation (25) |  | | |
-| 1095 | Cars on Campus (30) |  | | |
+| 1095 | Cars on Campus (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1095.cpp) |  | map，排序 |
 | 1096 | Consecutive Factors (20) |  | | |
-| 1097 | Deduplication on a Linked List (25) |  | | |
+| 1097 | Deduplication on a Linked List (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1097.cpp) | | |
 | 1098 | Insertion or Heap Sort (25) |  | | |
 | 1099 | Build A Binary Search Tree (30) |  | | |
 | 1100 | Mars Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1100.cpp) | | |
 | 1101 | Quick Sort (25) |  | | |
-| 1102 | Invert a Binary Tree (25) |  | | |
+| 1102 | Invert a Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1102.cpp) | | 树的层序和中序遍历 |
 | 1103 | Integer Factorization (30) |  | | |
 | 1104 | Sum of Number Segments (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1104.cpp) | | |
 | 1105 | Spiral Matrix (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1105.cpp) | | |
 | 1106 | Lowest Price in Supply Chain (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1106.cpp) | | 树的层序遍历 |
 | 1107 | Social Clusters (30) |  | | |
-| 1108 | Finding Average (20) |  | | |
-| 1109 | Group Photo (25) |  | | |
-| 1110 | Complete Binary Tree (25) |  | | |
+| 1108 | Finding Average (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1108.cpp) | | |
+| 1109 | Group Photo (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1109.cpp) | | |
+| 1110 | Complete Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1110.cpp) | | |
 | 1111 | Online Map (30) |  | | |
 | 1112 | Stucked Keyboard (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1112.cpp) | | map |
 | 1113 | Integer Set Partition (25) |  | | |
@@ -125,12 +125,12 @@
 | 1117 | Eddington Number(25) |  | | |
 | 1118 | Birds in Forest (25) |  | | |
 | 1119 | Pre- and Post-order Traversals (30) |  | | |
-| 1120 | Friend Numbers (20) |  | | |
+| 1120 | Friend Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1120.cpp) | | map |
 | 1121 | Damn Single (25) |  | | |
 | 1122 | Hamiltonian Cycle (25) |  | | |
 | 1123 | Is It a Complete AVL Tree (30) |  | | |
 | 1124 | Raffle for Weibo Followers (20) |  | | |
-| 1125 | Chain the Ropes (25) |  | | |
+| 1125 | Chain the Ropes (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1125.cpp) | | |
 | 1126 | Eulerian Path (25) |  | | |
 | 1127 | ZigZagging on a Tree (30) |  | | |
 | 1128 | N Queens Puzzle (20) |  | | |
