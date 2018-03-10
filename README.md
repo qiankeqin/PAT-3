@@ -80,7 +80,7 @@
 | 1072 | Gas Station (30) |  | | |
 | 1073 | Scientific Notation (20) |  | | |
 | 1074 | Reversing Linked List (25) |  | | |
-| 1075 | PAT Judge (25) |  | | |
+| 1075 | PAT Judge (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1075.cpp) | | |
 | 1076 | Forwards on Weibo (30) |  | | |
 | 1077 | Kuchiguse (20) |  | | |
 | 1078 | Hashing (25) |  | | |
@@ -91,7 +91,7 @@
 | 1083 | List Grades (25) |  | | |
 | 1084 | Broken Keyboard (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1084.cpp) | | |
 | 1085 | Perfect Sequence (25) |  | | |
-| 1086 | Tree Traversals Again (25) |  | | |
+| 1086 | Tree Traversals Again (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1086.cpp) | | 前中后序遍历 |
 | 1087 | All Roads Lead to Rome (30) |  | | |
 | 1088 | Rational Arithmetic (20) |  | | |
 | 1089 | Insert or Merge (25) |  | | |
@@ -122,7 +122,7 @@
 | 1114 | Family Property (25) |  | | |
 | 1115 | Counting Nodes in a BST (30) |  | | |
 | 1116 | Come on! Let's C (20) |  | | |
-| 1117 | Eddington Number(25) |  | | |
+| 1117 | Eddington Number(25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1117.cpp) | | |
 | 1118 | Birds in Forest (25) |  | | |
 | 1119 | Pre- and Post-order Traversals (30) |  | | |
 | 1120 | Friend Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1120.cpp) | | map |
