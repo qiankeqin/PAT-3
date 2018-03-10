@@ -67,7 +67,6 @@ int main(){
         }
     }
     for(int i = 0; i < n; i++) if(mp[i] == 0) root = i;
-    
     for(q.push(root); !q.empty(); q.pop()){
         tmp = q.front();
         r[0][k++] = tmp;
