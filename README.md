@@ -98,7 +98,7 @@
 | 1090 | Highest Price in Supply Chain (25) |  | | |
 | 1091 | Acute Stroke (30) |  | | |
 | 1092 | To Buy or Not to Buy (20) |  | | |
-| 1093 | Count PAT's (25) |  | | |
+| 1093 | Count PAT's (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1093.cpp) | | |
 | 1094 | The Largest Generation (25) |  | | |
 | 1095 | Cars on Campus (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1095.cpp) |  | map，排序 |
 | 1096 | Consecutive Factors (20) |  | | |
@@ -106,7 +106,7 @@
 | 1098 | Insertion or Heap Sort (25) |  | | |
 | 1099 | Build A Binary Search Tree (30) |  | | |
 | 1100 | Mars Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1100.cpp) | | |
-| 1101 | Quick Sort (25) |  | | |
+| 1101 | Quick Sort (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1101.cpp) | | |
 | 1102 | Invert a Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1102.cpp) | | 树的层序和中序遍历 |
 | 1103 | Integer Factorization (30) |  | | |
 | 1104 | Sum of Number Segments (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1104.cpp) | | |
@@ -123,7 +123,7 @@
 | 1115 | Counting Nodes in a BST (30) |  | | |
 | 1116 | Come on! Let's C (20) |  | | |
 | 1117 | Eddington Number(25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1117.cpp) | | |
-| 1118 | Birds in Forest (25) |  | | |
+| 1118 | Birds in Forest (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1118.cpp) | | 并查集 |
 | 1119 | Pre- and Post-order Traversals (30) |  | | |
 | 1120 | Friend Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1120.cpp) | | map |
 | 1121 | Damn Single (25) |  | | |
