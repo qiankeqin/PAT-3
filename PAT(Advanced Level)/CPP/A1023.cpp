@@ -41,7 +41,7 @@ int main(){
     int sl,c;
     char a[23];
     fill(mp[0],mp[0]+20,0);
-    freopen("in/in.txt","r",stdin);
+    //freopen("in/in.txt","r",stdin);
     gets(a);
     sl = strlen(a);
     reverse(a,a+sl);
