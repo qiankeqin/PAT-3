@@ -55,8 +55,8 @@
 | 1047 | Student List for Course (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1047.cpp) | | |
 | 1048 | Find Coins (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1048.cpp) | | |
 | 1049 | Counting Ones (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1049.cpp) | | |
-| 1050 | String Subtraction (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1050.cpp) | | |
-| 1051 | Pop Sequence (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1051.cpp) | | |
+| 1050 | String Subtraction (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1050.cpp) | | map |
+| 1051 | Pop Sequence (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1051.cpp) | | 栈 |
 | 1052 | Linked List Sorting (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1052.cpp) | | |
 | 1053 | Path of Equal Weight (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1053.cpp) | | |
 | 1054 | The Dominant Color (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1054.cpp) | | |
@@ -79,7 +79,7 @@
 | 1071 | Speech Patterns (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1071.cpp) | | |
 | 1072 | Gas Station (30) |  | | |
 | 1073 | Scientific Notation (20) |  | | |
-| 1074 | Reversing Linked List (25) |  | | |
+| 1074 | Reversing Linked List (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1074.cpp) | | |
 | 1075 | PAT Judge (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1075.cpp) | | |
 | 1076 | Forwards on Weibo (30) |  | | |
 | 1077 | Kuchiguse (20) |  | | |
@@ -99,9 +99,9 @@
 | 1091 | Acute Stroke (30) |  | | |
 | 1092 | To Buy or Not to Buy (20) |  | | |
 | 1093 | Count PAT's (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1093.cpp) | | |
-| 1094 | The Largest Generation (25) |  | | |
+| 1094 | The Largest Generation (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1094.cpp) | | 层序遍历 |
 | 1095 | Cars on Campus (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1095.cpp) |  | map，排序 |
-| 1096 | Consecutive Factors (20) |  | | |
+| 1096 | Consecutive Factors (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1096.cpp) | | |
 | 1097 | Deduplication on a Linked List (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1097.cpp) | | |
 | 1098 | Insertion or Heap Sort (25) |  | | |
 | 1099 | Build A Binary Search Tree (30) |  | | |
