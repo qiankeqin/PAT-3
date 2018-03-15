@@ -65,15 +65,15 @@
 | 1057 | Stack (30) |  | | |
 | 1058 | A+B in Hogwarts (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1058.cpp) | | |
 | 1059 | Prime Factors (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1059.cpp) | | |
-| 1060 | Are They Equal (25) |  | | |
+| 1060 | Are They Equal (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1060.cpp) | | 字符串处理 |
 | 1061 | Dating (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1061.cpp) | | |
-| 1062 | Talent and Virtue (25) |  | | |
+| 1062 | Talent and Virtue (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1062.cpp) | | |
 | 1063 | Set Similarity (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1063.cpp) | | |
-| 1064 | Complete Binary Search Tree (30) |  | | |
-| 1065 | A+B and C (64bit) (20) |  | | |
-| 1066 | Root of AVL Tree (25) |  | | |
+| 1064 | Complete Binary Search Tree (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1064.cpp) | | 完全二叉树 |
+| 1065 | A+B and C (64bit) (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1065.cpp) | | |
+| 1066 | Root of AVL Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1067.cpp) | | AVL树 |
 | 1067 | Sort with Swap(0,*) (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1067.cpp) | | |
-| 1068 | Find More Coins (30) |  | | |
+| 1068 | Find More Coins (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1068.cpp) | | 背包问题，动态规划 |
 | 1069 | The Black Hole of Numbers (20) |  | | |
 | 1070 | Mooncake (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1070.cpp) | | |
 | 1071 | Speech Patterns (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1071.cpp) | | |
