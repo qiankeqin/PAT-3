@@ -79,14 +79,13 @@ int main(){
     while(!q.empty() && flag){
         t = q.front();
         q.pop();
-        if(over && (no[t].left != -1 || no[t].right != -1)) 
-            flag = false;
-        if(no[t].left != -1)
-            q.push(no[t].left);
-        if(no[t].right != -1)
-            q.push(no[t].right);
-        if(no[t].left == -1 || no[t].right == -1)
+        if(over && (no[t].left != -1 || no[t].right != -1)) flag = false;
+        if(no[t].left != -1) q.push(no[t].left);
+        if(no[t].right != -1) q.push(no[t].right);
+        if(!over && (no[t].left == -1 || no[t].right == -1)){
             over = true;
+            if(no[t].left == -1 && no[t].right != -1) flag = false;
+        }
     }
     printf("%s %d", flag?"YES":"NO", flag?t:root);
     return 0;

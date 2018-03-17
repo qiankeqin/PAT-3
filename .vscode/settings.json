@@ -33,7 +33,8 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "python.pythonPath": "C:\\Python\\Python36\\python.exe"

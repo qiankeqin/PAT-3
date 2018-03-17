@@ -121,15 +121,15 @@
 | 1113 | Integer Set Partition (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1113.cpp) |  | |
 | 1114 | Family Property (25) |[Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1114.cpp) | | 并查集，map |
 | 1115 | Counting Nodes in a BST (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1115.cpp) | | BST |
-| 1116 | Come on! Let's C (20) | in a BST (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1116.cpp) | |
+| 1116 | Come on! Let's C (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1116.cpp) |  | |
 | 1117 | Eddington Number(25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1117.cpp) | | |
 | 1118 | Birds in Forest (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1118.cpp) | | 并查集 |
 | 1119 | Pre- and Post-order Traversals (30) |  | | |
 | 1120 | Friend Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1120.cpp) | | map |
-| 1121 | Damn Single (25) |  | | |
-| 1122 | Hamiltonian Cycle (25) |  | | |
-| 1123 | Is It a Complete AVL Tree (30) |  | | |
-| 1124 | Raffle for Weibo Followers (20) |  | | |
+| 1121 | Damn Single (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1121.cpp) | | map |
+| 1122 | Hamiltonian Cycle (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1122.cpp) | | |
+| 1123 | Is It a Complete AVL Tree (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1123.cpp)| | AVL树 |
+| 1124 | Raffle for Weibo Followers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1124.cpp) | | |
 | 1125 | Chain the Ropes (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1125.cpp) | | |
 | 1126 | Eulerian Path (25) |  | | |
 | 1127 | ZigZagging on a Tree (30) |  | | |
