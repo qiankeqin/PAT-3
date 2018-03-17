@@ -72,12 +72,12 @@ int main(){
 		peo[i] = a;					//假设每个人都是以第一个兴趣的社交社团
 		for(int j = 0; j < k - 1; j++) {
 			scanf("%d", &b);
-			Union(a, b);			//将兴趣并起来
+		    Union(a, b);			//将兴趣并起来
 		}
 	}
 	for(int i = 0; i < n; i++) {
 		peo[i] = findFather(peo[i]);
-		mp[peo[i]] ++;
+	    mp[peo[i]] ++;
 	}
 	for(int i = 1; i < 1001; i++) {
 		if (mp[i] != 0) v.push_back(mp[i]);

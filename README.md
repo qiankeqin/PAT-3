@@ -108,15 +108,15 @@
 | 1100 | Mars Numbers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1100.cpp) | | |
 | 1101 | Quick Sort (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1101.cpp) | | |
 | 1102 | Invert a Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1102.cpp) | | 树的层序和中序遍历 |
-| 1103 | Integer Factorization (30) |  | | |
+| 1103 | Integer Factorization (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1103.cpp) | | DFS |
 | 1104 | Sum of Number Segments (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1104.cpp) | | |
 | 1105 | Spiral Matrix (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1105.cpp) | | |
 | 1106 | Lowest Price in Supply Chain (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1106.cpp) | | 树的层序遍历 |
-| 1107 | Social Clusters (30) |  | | |
+| 1107 | Social Clusters (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1107.cpp) | | 并查集 |
 | 1108 | Finding Average (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1108.cpp) | | |
 | 1109 | Group Photo (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1109.cpp) | | |
 | 1110 | Complete Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1110.cpp) | | |
-| 1111 | Online Map (30) |  | | |
+| 1111 | Online Map (30) |  | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1111.cpp) | Dijkstra算法 |
 | 1112 | Stucked Keyboard (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1112.cpp) | | map |
 | 1113 | Integer Set Partition (25) |  | | |
 | 1114 | Family Property (25) |  | | |
