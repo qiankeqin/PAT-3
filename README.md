@@ -116,10 +116,10 @@
 | 1108 | Finding Average (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1108.cpp) | | |
 | 1109 | Group Photo (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1109.cpp) | | |
 | 1110 | Complete Binary Tree (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1110.cpp) | | |
-| 1111 | Online Map (30) |  | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1111.cpp) | Dijkstra算法 |
+| 1111 | Online Map (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1111.cpp) |  | Dijkstra算法 |
 | 1112 | Stucked Keyboard (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1112.cpp) | | map |
-| 1113 | Integer Set Partition (25) |  | | |
-| 1114 | Family Property (25) |  | | |
+| 1113 | Integer Set Partition (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1113.cpp) |  | |
+| 1114 | Family Property (25) |[Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1114.cpp) | | 并查集，map |
 | 1115 | Counting Nodes in a BST (30) |  | | |
 | 1116 | Come on! Let's C (20) |  | | |
 | 1117 | Eddington Number(25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1117.cpp) | | |
