@@ -132,9 +132,9 @@
 | 1124 | Raffle for Weibo Followers (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1124.cpp) | | |
 | 1125 | Chain the Ropes (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1125.cpp) | | |
 | 1126 | Eulerian Path (25) |  | | |
-| 1127 | ZigZagging on a Tree (30) |  | | |
+| 1127 | ZigZagging on a Tree (30) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1127.cpp) | | 树的遍历，stack |
 | 1128 | N Queens Puzzle (20) |  | | |
-| 1129 | Recommendation System (25) |  | | |
+| 1129 | Recommendation System (25) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1129.cpp) | | |
 | 1130 | Infix Expression (25) |  | | |
 | 1131 | Subway Map (30) |  | | |
 | 1132 | Cut Integer (20) | [Accepted](https://github.com/ultraji/PAT/blob/master/PAT(Advanced%20Level)/CPP/A1132.cpp) | | |
