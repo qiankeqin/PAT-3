@@ -72,7 +72,7 @@
 | 1066 | Root of AVL Tree (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1067.cpp) | | AVL树 |
 | 1067 | Sort with Swap(0,*) (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1067.cpp) | | |
 | 1068 | Find More Coins (30) | [Accepted](/PAT(Advanced%20Level)/CPP/A1068.cpp) | | 背包问题，动态规划 |
-| 1069 | The Black Hole of Numbers (20) |  | | |
+| 1069 | The Black Hole of Numbers (20) | [Accepted](/PAT(Advanced%20Level)/CPP/A1069.cpp) | | |
 | 1070 | Mooncake (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1070.cpp) | | |
 | 1071 | Speech Patterns (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1071.cpp) | | |
 | 1072 | Gas Station (30) |  | | |
@@ -162,7 +162,7 @@
 | 1012 | 数字分类 (20)                 | [Accepted](/PAT(Basic%20Level)/CPP/B1012.cpp) | [Accepted](/PAT(Basic%20Level)/Python/B1012.py) |                                                              |
 | 1013 | 数素数 (20)                   | [Accepted](/PAT(Basic%20Level)/CPP/B1013.cpp) | [Failed](/PAT(Basic%20Level)/Python/B1013.py) |                                                              |
 | 1014 | 福尔摩斯的约会 (20)           | [Accepted](/PAT(Basic%20Level)/CPP/B1014.cpp) |                                                              |                                                              |
-|      |                               |                                                              |                                                              |                                                              |
+| 1015 | 德才论 (25)                  | [Accepted](/PAT(Basic%20Level)/CPP/B1015.cpp) |                                                              |                                                              |
 |      |                               |                                                              |                                                              |                                                              |
 |      |                               |                                                              |                                                              |                                                              |
 |      |                               |                                                              |                                                              |                                                              |
