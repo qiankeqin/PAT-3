@@ -2,8 +2,8 @@
 
 ## PAT (Advanced Level)
 
-| ID   | Title           | C/C++                                                        | Python | Keywords |
-| ---- | --------------- | ------------------------------------------------------------ | ------ | -------- |
+| ID   | Title           | C/C++                                          | Python | Keywords |
+| ---- | --------------- | ------------------------------------------------ | ------ | -------- |
 | 1001 | A+B Format (20) | [Accepted](/PAT(Advanced%20Level)/CPP/A1001.cpp) |      | 字符串   |
 | 1002 | A+B for Polynomials (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1002.cpp) |        |  |
 | 1003 | Emergency (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1003.cpp) | | Dijkstra算法 |
