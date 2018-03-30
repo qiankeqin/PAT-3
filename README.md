@@ -143,6 +143,7 @@
 | 1137 | Final Grading (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1137.cpp) | | map |
 | 1138 | Postorder Traversal (25) | [Accepted](/PAT(Advanced%20Level)/CPP/A1138.cpp) | | 树的遍历 |
 | 1139 | First Contact (30) | [Accepted](/PAT(Advanced%20Level)/CPP/A1139.cpp) | | |
+| 1140 | Look-and-say Sequence (20) | [Accepted](/PAT(Advanced%20Level)/CPP/A1140.cpp) | | |
 
 ## PAT (Basic Level)
 
