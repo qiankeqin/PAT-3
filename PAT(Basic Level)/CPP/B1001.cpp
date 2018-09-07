@@ -1,8 +1,5 @@
 /*
 1001. 害死人不偿命的(3n+1)猜想 (15)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 卡拉兹(Callatz)猜想：
 对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，
@@ -25,17 +22,21 @@
 */
 
 
-#include <cstdio>
+#include <iostream>
+using namespace std;
 
-int main(){
-    int n,i;
-    scanf("%d",&n);
-    for(i = 0;n != 1; i++){
-        if(n % 2 != 0){
+int main(int argc, char const *argv[])
+{
+    int n, i;
+    cin >> n;
+    for(i = 0; n != 1; i++)
+    {
+        if(n % 2 != 0)
+        {
             n = 3 * n + 1;
         }
         n /= 2;
     }
-    printf("%d",i);
+    cout << i;
     return 0;
 }

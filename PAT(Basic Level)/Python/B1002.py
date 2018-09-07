@@ -1,11 +1,6 @@
 """
 1002. 写出这个数 (20)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
+
 读入一个自然数n，计算其各位数字之和，用汉语拼音写出和的每一位数字。
 
 输入格式：
@@ -25,8 +20,8 @@ num = ("ling","yi","er","san","si","wu","liu","qi","ba","jiu")
 s = str(input())
 sum = 0
 for i in s:
-    sum += int(i)
+	sum += int(i)
 s = str(sum)
 for i in s[0:-1]:
-    print(num[int(i)],end=' ')
+    print(num[int(i)], end=' ')
 print(num[int(s[-1])])
