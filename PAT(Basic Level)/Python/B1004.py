@@ -1,12 +1,6 @@
 """
 1004. 成绩排名 (20)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
-判题程序
+
 读入n名学生的姓名、学号、成绩，分别输出成绩最高和成绩最低学生的姓名和学号。
 
 输入格式：
@@ -33,7 +27,7 @@ Mike CS991301
 Joe Math990112
 """
 
-h_stu,l_stu,h_grade,l_grade = "","",0,100
+h_stu, l_stu, h_grade, l_grade = "", "", 0, 100
 n = int(input())
 for i in range(n):
     a = input().split()
@@ -41,5 +35,4 @@ for i in range(n):
         h_stu, h_grade = a[0] + ' ' + a[1], int(a[2])
     if int(a[2]) < l_grade:
         l_stu, l_grade = a[0] + ' ' + a[1], int(a[2])
-print(h_stu)
-print(l_stu)
+print(h_stu, l_stu, sep='\n')

@@ -1,8 +1,5 @@
 /*
 1005. 继续(3n+1)猜想 (25)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 卡拉兹(Callatz)猜想已经在1001中给出了描述。在这个题目里，情况稍微有些复杂。
 当我们验证卡拉兹猜想的时候，为了避免重复计算，可以记录下递推过程中遇到的每一个数。例如
@@ -28,37 +25,39 @@
 7 6
 */
 
-//从第一个开始判断，如其他num被包含就将mp[num]赋值为零，判断到最后结束。输出mp[num] != 0 的num;
+//从第一个num开始判断，如其他num被包含，就将mp[num]赋值为零，判断到最后结束。输出mp[num] != 0 的num;
 #include <iostream>
 using namespace std;
-int num[101],mp[101];
 
-int main(){
-    int n, k = 0;
-    scanf("%d",&n);
+int num[101], mp[101], n;
+
+int main(int argc, char const *argv[])
+{
+    scanf("%d", &n);
     for(int i = 0; i < n; i ++){
-        scanf("%d",&num[i]);
+        scanf("%d", &num[i]);
         mp[num[i]] = 1;
     }
     for(int i = 0; i < n; i ++){
         if(mp[num[i]] == 1){
-            int tmp = num[i];
-            while(tmp != 1){
-                if(tmp % 2 == 1){
-                    tmp = tmp*3+1;
+            for(int t = num[i]; t != 1; ){
+                if(t % 2 == 1){
+                    t = t * 3 + 1;
                 }
-                tmp = tmp/2;
-                if(tmp <= 100 && mp[tmp]) mp[tmp] = 0;
+                t = t / 2;
+                if( t <= 100 && mp[t] == 1){
+                    mp[t] = 0;
+                }
             }
         }
     }
-    for(int i = 100;i >= 0; i--){
-        if(mp[i] != 0){
-            num[k++] = i;
+    for(int i = 100, k = 0; i >= 0; i--){
+        if(mp[i] == 1){
+            if(k++ != 0){
+                printf(" ");
+            }
+            printf("%d", i);
         }
-    }
-    for(int i = 0 ; i < k; i++){
-        printf("%d%c",num[i],i == k-1?'\n':' ');
     }
     return 0;
 }

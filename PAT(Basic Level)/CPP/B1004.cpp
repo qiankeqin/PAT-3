@@ -1,8 +1,5 @@
 /*
 1004. 成绩排名 (20)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 读入n名学生的姓名、学号、成绩，分别输出成绩最高和成绩最低学生的姓名和学号。
 
@@ -31,27 +28,30 @@ Mike CS991301
 Joe Math990112
 */
 
-#include <cstdio>
+#include <iostream>
+using namespace std;
+
 struct Student{
-    char name[11];
-    char num[11];
+    char name[11], num[11];
     int score;
 }s[1000];
 
-int main(){
-    int n,highest = 0,lowest = 0;
-    scanf("%d",&n);
-    for(int i = 0; i < n; i++){
-        scanf("%s %s %d",s[i].name,s[i].num,&(s[i].score));
-    }
-    for(int i = 0; i < n; i++){
-        if(s[i].score > s[highest].score){
-            highest = i;
-        }else if(s[i].score < s[lowest].score){
-            lowest = i;
+int main(int argc, char const *argv[])
+{
+    int n, high = 0, low = 0;
+    scanf("%d", &n);
+    for(int i = 0; i < n; i ++)
+    {
+        scanf("%s %s %d",s[i].name, s[i].num, &(s[i].score));
+        if(s[i].score > s[high].score)
+        {
+            high = i;
+        }
+        else if(s[i].score < s[low].score)
+        {
+            low = i;
         }
     }
-    printf("%s %s\n",s[highest].name,s[highest].num);
-    printf("%s %s\n",s[lowest].name,s[lowest].num);
+    printf("%s %s\n%s %s\n", s[high].name, s[high].num, s[low].name, s[low].num);
     return 0;
 }

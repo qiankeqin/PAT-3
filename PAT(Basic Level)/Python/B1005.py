@@ -1,11 +1,6 @@
 """
 1005. 继续(3n+1)猜想 (25)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
+
 卡拉兹(Callatz)猜想已经在1001中给出了描述。在这个题目里，情况稍微有些复杂。
 当我们验证卡拉兹猜想的时候，为了避免重复计算，可以记录下递推过程中遇到的每一个数。例如对n=3进行验证的时候，我们需
 要计算3、5、8、4、2、1，则当我们对n=5、8、4、2进行验证的时候，就可以直接判定卡拉兹猜想的真伪，而不需要重复计算，
@@ -25,21 +20,23 @@ n不能被数列中的其他数字所覆盖。
 6
 3 5 6 7 8 11
 
+输出样例：
+7 6
 """
 
 n = int(input())
-dic = {int(x):True for x in str(input()).split()}
+dic = { int(x):True for x in str(input()).split() }
 for key,value in dic.items():
     if value:
         tmp = key
-        while tmp != 1 :
+        while tmp != 1:
             if tmp % 2 == 1:
-                tmp = tmp*3+1
-            tmp = tmp//2
+                tmp = tmp * 3 + 1
+            tmp = tmp // 2
             if dic.__contains__(tmp):
                 dic[tmp] = False
-l = [key for key,value in dic.items() if value]
-l.sort(reverse=True)
+l = [ key for key,value in dic.items() if value ]
+l.sort(reverse = True)
 for x in l[0:-1]:
-    print(x,end=' ')
+    print(x, end=' ')
 print(l[-1])
