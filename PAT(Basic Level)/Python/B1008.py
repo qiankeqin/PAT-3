@@ -1,11 +1,6 @@
 """
 1008. 数组元素循环右移问题 (20)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
+
 一个数组A中存有N（N>0）个整数，在不允许使用另外数组的前提下，将每个整数循环向右移M（M>=0）个位置，即将A中的数据
 由（A0 A1……AN-1）变换为（AN-M …… AN-1 A0 A1……AN-M-1）（最后M个数循环移至最前面的M个位置）。如果需要考虑程序移
 动数据的次数尽量少，要如何设计移动的方法？
@@ -22,16 +17,15 @@
 
 输出样例：
 5 6 1 2 3 4
-
 """
 
-n,m = str(input()).split()
+n, m = str(input()).split()
 num = [x for x in str(input()).split()]
-m = int(n) - int(m)%int(n)
+m = int(n) - int(m) % int(n)
 
 if m != 6:
-    num = num[m-1::-1] + num[-1:m-1:-1]
-    num = num[::-1]
+    num = num[m-1 : : -1] + num[-1: m-1 :-1]
+    num = num[ : : -1]
 for x in num[:-1]:
-    print(x,end=' ')
+    print(x, end = ' ')
 print(num[-1])

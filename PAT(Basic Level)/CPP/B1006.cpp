@@ -1,8 +1,5 @@
 /*
 1006. 换个格式输出整数 (15)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 让我们用字母B来表示“百”、字母S表示“十”，用“12...n”来表示个位数字n（<10），换个
 格式来输出任一个不超过3位的正整数。例如234应该被输出为BBSSS1234，因为它有2个“百”、
@@ -24,14 +21,17 @@ BBSSS1234
 输出样例2：
 SS123
 */
-#include <cstdio>
 
-int main(){
-    int n,b,s,g;
-    scanf("%d",&n);
-    g = n%10;
-    s = n/10%10;
-    b = n/100%10;
+#include <iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    int n, b, s, g;
+    scanf("%d", &n);
+    g = n % 10;
+    s = n / 10 % 10;
+    b = n / 100 % 10;
     for(int i = 0; i < b; i++){
         printf("B");
     }
@@ -39,7 +39,7 @@ int main(){
         printf("S");
     }
     for(int i = 0; i < g; i++){
-        printf("%d",i+1);
+        printf("%d", i+1);
     }
     return 0;	
 }

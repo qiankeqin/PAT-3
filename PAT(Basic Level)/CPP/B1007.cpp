@@ -1,11 +1,8 @@
 /*
 1007. 素数对猜想 (20)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 让我们定义 dn 为：dn = pn+1 - pn，其中 pi 是第i个素数。显然有 d1=1 且对于n>1有 dn 是偶
-数。“素数对猜想”认为“存在无穷多对相邻且差为2的素数”。现给定任意正整数N (< 105)，请计算不
+数。“素数对猜想”认为“存在无穷多对相邻且差为2的素数”。现给定任意正整数N (< 10^5)，请计算不
 超过N的满足猜想的素数对的个数。
 
 输入格式：
@@ -21,13 +18,14 @@
 4
 */
 
-#include <cstdio>
+#include <iostream>
 #include <cmath>
+using namespace std;
 
 int isPrime(int a){
     int m = sqrt(a);
     for(int i = 2; i <= m; i++){
-        if(a%i == 0){
+        if(a % i == 0){
             return 0;
         }
     }
@@ -42,6 +40,6 @@ int main(){
             cnt++;
         }
     }
-    printf("%d",cnt);
+    printf("%d", cnt);
     return 0;
 }

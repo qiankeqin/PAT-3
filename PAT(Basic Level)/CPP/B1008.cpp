@@ -1,8 +1,5 @@
 /*
 1008. 数组元素循环右移问题 (20)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 一个数组A中存有N（N>0）个整数，在不允许使用另外数组的前提下，将每个整数循环向右移M（M>=0）
 个位置，即将A中的数据由（A0 A1……AN-1）变换为（AN-M …… AN-1 A0 A1……AN-M-1）（最后M个数循
@@ -21,26 +18,27 @@
 输出样例：
 5 6 1 2 3 4
 */
+
 #include <iostream>
 #include <algorithm>
 using namespace std;
 int num[100];
 
-int main(){
-    int n,m;
-    scanf("%d %d",&n,&m);
+int main(int argc, char const *argv[])
+{
+    int n, m;
+    scanf("%d %d", &n, &m);
     for(int i = 0; i < n; i ++ ){
-        scanf("%d",&num[i]);
+        scanf("%d", &num[i]);
     }
     m = n - m % n;
     if(m != 6){
-        reverse(num,num+m);
-        reverse(num+m,num+n);
-        reverse(num,num+n);
+        reverse(num, num + m);
+        reverse(num + m, num + n);
+        reverse(num, num + n);
     }
-    for(int i = 0; i < n-1; i++){
-        printf("%d ",num[i]);
+    for(int i = 0; i < n; i++){
+        printf("%d%c", num[i], (i == n-1) ? '\n':' ');
     }
-    printf("%d",num[n-1]);
-    return 0;	
+    return 0;
 }
