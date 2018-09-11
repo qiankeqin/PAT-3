@@ -1,11 +1,5 @@
 """
 1011. A+B和C (15)
-时间限制
-150 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
 
 给定区间[-231, 231]内的3个整数A、B和C，请判断A+B是否大于C。
 
@@ -30,9 +24,9 @@ Case #4: false
 """
 
 n = int(input())
-for i in range(1,n+1):
+for i in range(1, n+1):
     num = [int(x) for x in str(input()).split()]
     if num[0] + num[1] > num[2]:
-        print("Case #%d: true"%i)
+        print("Case #%d: true" % i)
     else:
-        print("Case #%d: false"%i)
+        print("Case #%d: false" % i)

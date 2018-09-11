@@ -1,10 +1,7 @@
 /*
 1011. A+B和C (15)
-时间限制 150 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
-给定区间[-231, 231]内的3个整数A、B和C，请判断A+B是否大于C。
+给定区间[-2^31, 2^31]内的3个整数A、B和C，请判断A+B是否大于C。
 
 输入格式：
 输入第1行给出正整数T(<=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。
@@ -28,19 +25,20 @@ Case #3: true
 Case #4: false
 
 */
-#include <cstdio>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main(int argc, char const *argv[])
+{
     int N;
-    long long a,b,c;
-    scanf("%d",&N);
+    long long a, b, c;
+    scanf("%d", &N);
     for (int i = 0; i < N; ++i){
-        scanf("%lld %lld %lld",&a,&b,&c);
+        scanf("%lld %lld %lld", &a, &b, &c);
         if(a + b > c){
-            printf("Case #%d: true\n",i+1);
+            printf("Case #%d: true\n", i + 1);
         }else{
-            printf("Case #%d: false\n",i+1);
+            printf("Case #%d: false\n", i + 1);
         }
     }
     return 0;

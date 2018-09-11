@@ -1,13 +1,6 @@
 """
 1009. 说反话 (20)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
-判题程序
-Standard
+
 给定一句英语，要求你编写程序，将句中所有单词的顺序颠倒输出。
 
 输入格式：
@@ -24,8 +17,8 @@ Hello World Here I Come
 Come I Here World Hello
 """
 
-word = [ str for str in str(input()).split()]
-word = word[::-1]
+word = [ x for x in str(input()).split()]
+word = word[ : :-1]
 for s in word[:-1]:
-    print(s,end=' ')
+    print(s, end = ' ')
 print(word[-1])

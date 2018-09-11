@@ -1,11 +1,6 @@
 """
 1010. 一元多项式求导 (25)
-时间限制
-400 ms
-内存限制
-65536 kB
-代码长度限制
-8000 B
+
 设计函数求一元多项式的导数。（注：xn（n为整数）的一阶导数为n*xn-1。）
 
 输入格式：
@@ -22,15 +17,14 @@
 12 3 -10 1 6 0
 """
 
-num = [int(x) for x in str(input()).split()]
-result = []
-for i in range(0,len(num),2):
+num, result = [int(x) for x in str(input()).split()], []
+for i in range(0, len(num), 2):
     coe, exp = num[i]*num[i+1], num[i+1]-1
     if exp != -1:
-        result += [coe,exp]
+        result += [coe, exp]
 if len(result) == 0:
     print("0 0")
 else:
     for i in result[:-1]:
-        print(i,end=' ')
+        print(i, end = ' ')
     print(result[-1])

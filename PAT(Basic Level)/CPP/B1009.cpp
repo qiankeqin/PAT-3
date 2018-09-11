@@ -1,8 +1,5 @@
 /*
 1009. 说反话 (20)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 给定一句英语，要求你编写程序，将句中所有单词的顺序颠倒输出。
 
@@ -20,21 +17,23 @@ Hello World Here I Come
 Come I Here World Hello
 */
 
-#include <cstdio>
+#include <iostream>
+using namespace std;
 
-int main(){
+char a[80][100];
+
+int main(int argc, char const *argv[])
+{
     int i = 0;
-    char a[80][100];
-    while(1){
-        scanf("%s",*(a + i));
-        i++;
+    for( ; ; i++){
+        scanf("%s", *(a + i));
         if(getchar() == '\n'){
             break;	
         }
     }
-    while(--i){
-        printf("%s ",*(a+i));
+    for( ; i > 0; i--){
+        printf("%s ", *(a + i));
     }
-    printf("%s",*a);
+    printf("%s", *a);
     return 0;	
 }

@@ -1,8 +1,5 @@
 /*
 1010. 一元多项式求导 (25)
-时间限制 400 ms
-内存限制 65536 kB
-代码长度限制 8000 B
 
 设计函数求一元多项式的导数。（注：xn（n为整数）的一阶导数为n*xn-1。）
 
@@ -19,24 +16,27 @@
 输出样例：
 12 3 -10 1 6 0
 */
-#include <cstdio>
+
+#include <iostream>
+using namespace std;
+
 int q[1000];
-int main(){
-    int xiShu,zhiShu,k = 0;
-    while(scanf("%d %d",&xiShu,&zhiShu) != EOF){
-        xiShu = xiShu * zhiShu;
-        if(--zhiShu != -1){
-            q[k++] = xiShu;
-            q[k++] = zhiShu;
+int main(int argc, char const *argv[])
+{
+    int coe, exp, k = 0;
+    while(scanf("%d %d", &coe, &exp) != EOF){
+        coe = coe * exp;
+        if(--exp != -1){
+            q[k++] = coe;
+            q[k++] = exp;
         }
     }
     if(k == 0){
         printf("0 0");
     }else{
-        for(int i = 0; i < k-1; i++){
-            printf("%d ",q[i]);
+        for(int i = 0; i < k; i++){
+            printf("%d%c", q[i], (i==k-1)?'\n':' ');
         }
-        printf("%d",q[k-1]);
     }
     return 0;
 }
